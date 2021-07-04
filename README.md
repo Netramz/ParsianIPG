@@ -10,3 +10,4 @@ Usage
 -----
 
     use Netramz\ParsianIPG\ParsianIPG;
+    $IPG = new ParsianIPG('MERCHANTID');

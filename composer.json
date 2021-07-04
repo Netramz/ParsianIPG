@@ -12,6 +12,7 @@
         "php": ">=5.3.0"
     },
     "autoload": {
+        "minimum-stability": "stable",
         "psr-4": {
             "Netramz\\ParsianIPG\\": "src/"
         }

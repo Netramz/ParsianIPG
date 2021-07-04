@@ -4,9 +4,9 @@ namespace Netramz\ParsianIPG;
 
 class ParsianIPG{
 	
-	public function __construct($args=[])
+	public function __construct(string $LoginAccount)
 	{
-		$this->LoginAccount = isset( $args['LoginAccount'] ) ? $args['LoginAccount'] : '';
+		$this->LoginAccount = $LoginAccount;
 	}
     
     public function paymentRequest($Amount, $OrderId, $CallBackUrl)

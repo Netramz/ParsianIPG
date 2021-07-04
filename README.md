@@ -9,4 +9,4 @@ Install Using Composer
 Usage
 -----
 
-    use Netramz/ParsianIPG;
+    use Netramz\ParsianIPG\ParsianIPG;

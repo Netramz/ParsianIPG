@@ -1,0 +1,17 @@
+{
+    "name": "netramz/parsianipg",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Amin Sepehri",
+            "email": "aminrpg@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Netramz\\ParsianIPG\\": "src/"
+        }
+    }
+}

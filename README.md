@@ -19,6 +19,8 @@ Payment Request
 
     if ($paymentRequest->Status == 'success') {
         echo 'https://pec.shaparak.ir/NewIPG/?Token='.$paymentRequest->token;
+    }else{
+        //error
     }
 
 

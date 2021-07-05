@@ -57,16 +57,12 @@ class ParsianIPG{
 		
 		if( $Status == 0 ){
 		    $response->Status           = 'success';
+		}else{
+		    $response->Status           = 'error';
+		}
 	            $response->Message          = $Message;
 		    $response->CardNumberMasked = $CardNumberMasked;
 		    $response->RRN              = $RRN;
-		}else{
-		    $response->Status           = 'error';
-		    $response->Message          = $Message;
-		    $response->CardNumberMasked = $CardNumberMasked;
-		    $response->RRN              = $RRN;
-		}
-        
         return $response;
 	}
 	

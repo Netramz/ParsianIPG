@@ -56,13 +56,16 @@ class ParsianIPG{
 		$RRN                = $result->ConfirmPaymentResult->RRN;
 		
 		if( $Status == 0 ){
-            $response->Status = 'success';
-        }else{
-            $response->Status           = 'error';
-            $response->Message          = $Message;
-            $response->CardNumberMasked = $CardNumberMasked;
-			$response->RRN              = $RRN;
-        }
+		    $response->Status           = 'success';
+	            $response->Message          = $Message;
+		    $response->CardNumberMasked = $CardNumberMasked;
+		    $response->RRN              = $RRN;
+		}else{
+		    $response->Status           = 'error';
+		    $response->Message          = $Message;
+		    $response->CardNumberMasked = $CardNumberMasked;
+		    $response->RRN              = $RRN;
+		}
         
         return $response;
 	}

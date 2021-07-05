@@ -11,12 +11,19 @@ Usage
 
     use Netramz\ParsianIPG\ParsianIPG;
     $IPG = new ParsianIPG('MERCHANTID');
+
+Payment Request
+-----
+
     $paymentRequest = $IPG->paymentRequest($Amount, $OrderId, $CallBackUrl);
 
     if ($paymentRequest->Status == 'success') {
         echo 'https://pec.shaparak.ir/NewIPG/?Token='.$paymentRequest->token;
     }
 
+
+Confirm Payment
+-----
     $confirmPayment = $IPG->confirmPayment($token);
     if ($confirmPayment->Status == 'success') {
 
